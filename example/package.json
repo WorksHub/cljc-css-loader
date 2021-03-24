@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "shadow-release": "shadow-cljs release app",
+    "compile": "shadow-cljs compile app",
+    "shadow-watch": "shadow-cljs watch app",
+    "workspaces": "shadow-cljs watch cards",
+    "dev-server": "shadow-cljs server",
+    "webpack-watch": "webpack --watch",
+    "dev": "concurrently --kill-others \"npm run shadow-watch\" \"npm run webpack-watch\""
+  },
+  "dependencies": {
+    "cljc-css-loader": "^1.0.0",
+    "create-react-class": "^15.6.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "acorn": "^7.2.0",
+    "autoprefixer": "^9.7.6",
+    "concurrently": "^5.2.0",
+    "css-loader": "^3.5.3",
+    "extract-loader": "^5.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.0.0",
+    "loader-utils": "^2.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "2.1.2",
+    "sass-loader": "^8.0.2",
+    "shadow-cljs": "^2.8.94",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-manifest-plugin": "^2.2.0"
+  }
+}
