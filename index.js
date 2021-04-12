@@ -14,7 +14,7 @@ const snakeCaseToKebabCase = str => str.replace(/_/g, '-');
 const kebabCaseToSnakeCase = str => str.replace(/-/g, '_');
 
 const astToDefs = ast => {
-  let defs;
+  let defs = '';
 
   ast.body.forEach(node => {
     if (node.type === 'ExpressionStatement' && node.expression.left) {
