@@ -3,7 +3,7 @@
     "webpack-watch": "webpack --watch"
   },
   "dependencies": {
-    "cljc-css-loader": "^1.0.0",
+    "cljc-css-loader": "../",
     "create-react-class": "^15.6.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
